@@ -1,17 +1,35 @@
 module.exports = {
-  extends: ['mantine', 'plugin:@next/next/recommended', 'plugin:jest/recommended'],
-  plugins: ['testing-library', 'jest'],
-  overrides: [
-    {
-      files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:testing-library/react'],
-    },
-  ],
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  plugins: ['react', '@typescript-eslint', 'unused-imports'],
   rules: {
-    'react/react-in-jsx-scope': 'off',
-    'import/extensions': 'off',
+    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'warn',
+      {
+        vars: 'all',
+        varsIgnorePattern: '^_',
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
+    ],
   },
-};
+}

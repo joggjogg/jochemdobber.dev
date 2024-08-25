@@ -5,6 +5,10 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 export default withBundleAnalyzer({
+  images: {
+   loader: 'custom',
+   loaderFile: './util/loader.ts'
+  },
   reactStrictMode: false,
   eslint: {
     ignoreDuringBuilds: true,
