@@ -64,7 +64,7 @@ export async function POST(req: Request) {
     }
   } else {
     try {
-      sendEmail(data)
+      await sendEmail(data)
       return NextResponse.json(
         {
           message: 'Message sent succesfully',
@@ -84,7 +84,7 @@ export async function POST(req: Request) {
   }
 }
 
-const sendEmail = (data: EmailRequest) => {
+const sendEmail = async (data: EmailRequest) => {
   var client = new postmark.ServerClient(process.env.POSTMARK_KEY)
 
   client.sendEmailWithTemplate({
