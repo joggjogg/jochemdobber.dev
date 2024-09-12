@@ -4,8 +4,8 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core'
 import { theme } from '../theme'
 
 export const metadata = {
-  title: 'Jochem Dobber',
-  description: 'Welcome to my personal website.',
+  title: 'Jochem Dobber portfolio',
+  description: 'Welcome to the portfilio website of Jochem Dobber.',
 }
 
 export default function RootLayout({ children }: { children: any }) {

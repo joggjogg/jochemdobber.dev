@@ -1,0 +1,24 @@
+.container {
+  background-color: var(--mantine-primary-color-5);
+  display: flex;
+  justify-content: space-around;
+
+  padding: 1.5rem 2.5rem;
+
+  @media (min-width: $mantine-breakpoint-xs) {
+    padding: 3rem 5rem;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+    padding: 3rem 10rem;
+  }
+}
+
+.navbar {
+  flex: 1;
+  max-width: 1296px;
+}
+
+.burger {
+  color: var(--mantine-color-white);
+}

@@ -1,29 +1,22 @@
 .wrapper {
   position: relative;
   box-sizing: border-box;
-  background-color: #002DD0;
-}
-
-.inner {
-  position: relative;
-  padding-top: rem(120px);
-  padding-bottom: rem(120px);
-  color: var(--mantine-color-white);
-
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    padding-bottom: rem(80px);
-    padding-top: rem(80px);
-  }
+  background-color: var(--mantine-primary-color-6);
 }
 
 .description {
-  margin-top: var(--mantine-spacing-xl);
-  font-size: rem(24px);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 60px;
   color: var(--mantine-color-white);
+  line-height: 110%;
+  @media (min-width: $mantine-breakpoint-xs) {
+    margin-top: 6rem;
+    font-size: 102px;
+  }
 
-  @media (max-width: $mantine-breakpoint-sm) {
-    font-size: rem(18px);
+  @media (min-width: $mantine-breakpoint-lg) {
+    font-size: 116px;
   }
 }
 
@@ -45,5 +38,40 @@
     padding-left: rem(18px);
     padding-right: rem(18px);
     flex: 1;
+  }
+}
+
+.hero {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  @media (min-width: $mantine-breakpoint-md) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+  }
+}
+
+.portrait {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 1rem;
+  @media (min-width: $mantine-breakpoint-md) {
+    max-width: 461px;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+  }
+}
+
+.logo {
+  @media (min-width: $mantine-breakpoint-md) {
+    margin-left: 3rem;
+    margin-top: auto;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
   }
 }

@@ -1,0 +1,113 @@
+.footer {
+  padding-top: 2rem;
+  background-color: var(--mantine-primary-color-6);
+}
+
+.form input,
+.form textarea {
+  color: var(--mantine-color-white);
+  background-color: var(--mantine-primary-color-6);
+  padding-left: 0;
+  border-bottom: 2px solid var(--mantine-color-white);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  opacity: 60%;
+
+  font-size: 17px;
+
+  transition: all 0.3s ease-out;
+
+  &:focus {
+    opacity: 100%;
+  }
+}
+
+.form label {
+  color: var(--mantine-color-white);
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 200%;
+  text-decoration: none;
+}
+
+.form button {
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 200%;
+  border-radius: 0;
+  color: var(--mantine-color-white);
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--mantine-color-white);
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+}
+
+.form button:hover::before,
+.form button:focus::before,
+.form button:active::before {
+  right: 0;
+}
+
+.title {
+  color: var(--mantine-color-white);
+  margin-bottom: 3rem;
+  font-size: 60px;
+  line-height: 110%;
+  @media (min-width: $mantine-breakpoint-xs) {
+    font-size: 102px;
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+    font-size: 116px;
+    margin-bottom: 5rem;
+  }
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  @media (min-width: $mantine-breakpoint-xs) {
+    flex-direction: row;
+    align-content: flex-start;
+  }
+}
+
+.success {
+  color: var(--mantine-color-white);
+  font-size: 16px;
+
+  transition: all 0.3s ease-out;
+}

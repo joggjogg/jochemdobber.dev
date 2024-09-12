@@ -1,0 +1,14 @@
+.container {
+  color: var(--mantine-color-white);
+  margin-top: 4rem;
+  @media (min-width: $mantine-breakpoint-xs) {
+    margin-top: 5rem;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+    margin-top: 6rem;
+  }
+
+  --ai-size-xxs: 16px;
+  --ai-size-xxl: 50px;
+}

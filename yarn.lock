@@ -36,6 +36,104 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arcjet/analyze@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/analyze@npm:1.0.0-alpha.24"
+  dependencies:
+    "@arcjet/protocol": "npm:1.0.0-alpha.24"
+  checksum: 10c0/331318ccfbfaa13b87214a263114de62621009c7a5f9e519fdac16d6d3d743c86378e15424b4af4b706c3b0e4ae622eb9beeda6041630fe8bfd077d51b50c2fc
+  languageName: node
+  linkType: hard
+
+"@arcjet/duration@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/duration@npm:1.0.0-alpha.24"
+  checksum: 10c0/2a276ffb860cbccbb0d9ee2647e0899ff5bb27e250eb452b83e12d2be8116ec63edc86e1851682cbd7515b6bcce3eb9093b6cab2a92f9a2b065ef7108f0baca7
+  languageName: node
+  linkType: hard
+
+"@arcjet/env@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/env@npm:1.0.0-alpha.24"
+  checksum: 10c0/bcf4e78f5ecbe8525ba8ac804c46edeb94e3b013914c67fb5ca329056dec4331474ed413b8e0b19c97cae93c6141882ff9629d811178d7c6ccb241243570ad29
+  languageName: node
+  linkType: hard
+
+"@arcjet/headers@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/headers@npm:1.0.0-alpha.24"
+  checksum: 10c0/681915583cc6ca42c8583e0de1517d9c8b43311f0029b96b2274540d62892aa7c5f2bee4292e9e25ccd07505b951c0138e50f48cd53b083e4a5c55fecd714747
+  languageName: node
+  linkType: hard
+
+"@arcjet/ip@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/ip@npm:1.0.0-alpha.24"
+  checksum: 10c0/6dc232e57cf2a590f1fe3dae393dbe7fd284a70a0df24920ebcb5fe52e120f96a3c30edc16c3b308f927c10a4b9f067ad1df1a746a9796a4eb0d769619c5e929
+  languageName: node
+  linkType: hard
+
+"@arcjet/logger@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/logger@npm:1.0.0-alpha.24"
+  dependencies:
+    "@arcjet/sprintf": "npm:1.0.0-alpha.24"
+  checksum: 10c0/4e6aa45ea5f93e010ad841955a7edb25d295bc888936b8359322e73f68b05f9281c74a488d52992f0f8d8a529949903fcf96f08589f5b5908bdc841829299811
+  languageName: node
+  linkType: hard
+
+"@arcjet/next@npm:^1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/next@npm:1.0.0-alpha.24"
+  dependencies:
+    "@arcjet/env": "npm:1.0.0-alpha.24"
+    "@arcjet/headers": "npm:1.0.0-alpha.24"
+    "@arcjet/ip": "npm:1.0.0-alpha.24"
+    "@arcjet/logger": "npm:1.0.0-alpha.24"
+    "@arcjet/protocol": "npm:1.0.0-alpha.24"
+    "@arcjet/transport": "npm:1.0.0-alpha.24"
+    arcjet: "npm:1.0.0-alpha.24"
+  peerDependencies:
+    next: ">=13"
+  checksum: 10c0/042af3c5f84295763f15e94e7568adc6b1ddfa27ee575b462794ee590e49b5610f8076b08d7a2295f6a311d9aea2431e6233591d456802010366f5d045ded3eb
+  languageName: node
+  linkType: hard
+
+"@arcjet/protocol@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/protocol@npm:1.0.0-alpha.24"
+  dependencies:
+    "@bufbuild/protobuf": "npm:1.10.0"
+    "@connectrpc/connect": "npm:1.4.0"
+    typeid-js: "npm:1.0.0"
+  checksum: 10c0/93e53601b055d0e4b9c41f9744ed5d5a701f373ee226798b94469cd6a6597af27e48a825d88986b32b130a99249b7d9ebea33332acab716356014cdb915b001d
+  languageName: node
+  linkType: hard
+
+"@arcjet/runtime@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/runtime@npm:1.0.0-alpha.24"
+  checksum: 10c0/07dca91d8f403b8b7bc4afd3db8f624746a559d3db30a293b3f3cd6b36a087a38227ed12510d4a69b5c9a91ac0df94a035aa36d0739235a6cf57f46db95f9083
+  languageName: node
+  linkType: hard
+
+"@arcjet/sprintf@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/sprintf@npm:1.0.0-alpha.24"
+  checksum: 10c0/6910f4f75cd1bf0063a981a122b31b3cba3c1804cdad4fa68f28e240938251f63373a7cc78c38cd72fd9a87ddc6f00587e0adbfea1b84b5312382d480f10b08b
+  languageName: node
+  linkType: hard
+
+"@arcjet/transport@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "@arcjet/transport@npm:1.0.0-alpha.24"
+  dependencies:
+    "@connectrpc/connect-node": "npm:1.4.0"
+    "@connectrpc/connect-web": "npm:1.4.0"
+  checksum: 10c0/727bd1ff49035587e585f5009f8265eefdd24096ba47dd51b73198d7d44421f2a87bdcf639c3ba32fe781184287a33d0bcd9479101d1058e79d3edab14d6f0f0
+  languageName: node
+  linkType: hard
+
 "@aw-web-design/x-default-browser@npm:1.4.126":
   version: 1.4.126
   resolution: "@aw-web-design/x-default-browser@npm:1.4.126"
@@ -2380,10 +2478,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bufbuild/protobuf@npm:1.10.0":
+  version: 1.10.0
+  resolution: "@bufbuild/protobuf@npm:1.10.0"
+  checksum: 10c0/5487b9c2e63846d0e3bde4d025cc77ae44a22166a5d6c184df0da5581e1ab6d66dd115af0ccad814576dcd011bb1b93989fb0ac1eb4ae452979bb8b186693ba0
+  languageName: node
+  linkType: hard
+
 "@colors/colors@npm:1.5.0":
   version: 1.5.0
   resolution: "@colors/colors@npm:1.5.0"
   checksum: 10c0/eb42729851adca56d19a08e48d5a1e95efd2a32c55ae0323de8119052be0510d4b7a1611f2abcbf28c044a6c11e6b7d38f99fccdad7429300c37a8ea5fb95b44
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect-node@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@connectrpc/connect-node@npm:1.4.0"
+  dependencies:
+    undici: "npm:^5.28.3"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.4.2
+    "@connectrpc/connect": 1.4.0
+  checksum: 10c0/8699e3cb8d5521c8a10841169a9bf549728de2651fef66b450a0b1a2c59057a0a7abd08fab21ccdfc0e5f45394112ad072db754001741b97ccd4376c10105b24
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect-web@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@connectrpc/connect-web@npm:1.4.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.4.2
+    "@connectrpc/connect": 1.4.0
+  checksum: 10c0/8f636ebda5b2707416c94aff72d285972e85eba15cae57eb6126b1d0da6f9dcdc7452ab3bd5d527cd987eb527e2f5cdc453ccb43098ac20ea2e2c3604c69c366
+  languageName: node
+  linkType: hard
+
+"@connectrpc/connect@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@connectrpc/connect@npm:1.4.0"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.4.2
+  checksum: 10c0/6006e4aef6908a786ffbda6f7c9c92fe0906e031e891c7ce28de9d1b8e3feb9115d924ec6fc38131a5b9936b537594b0a828711e3e0544f760c78e010eda1ea1
   languageName: node
   linkType: hard
 
@@ -2668,6 +2804,13 @@ __metadata:
   version: 2.1.2
   resolution: "@fal-works/esbuild-plugin-global-externals@npm:2.1.2"
   checksum: 10c0/2c84a8e6121b00ac8e4eb2469ab8f188142db2f1927391758e5d0142cb684b7eb0fad0c9d6caf358616eb2a77af2c067e08b9ec8e05749b415fc4dd0ef96d0fe
+  languageName: node
+  linkType: hard
+
+"@fastify/busboy@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "@fastify/busboy@npm:2.1.1"
+  checksum: 10c0/6f8027a8cba7f8f7b736718b013f5a38c0476eea67034c94a0d3c375e2b114366ad4419e6a6fa7ffc2ef9c6d3e0435d76dd584a7a1cbac23962fda7650b579e3
   languageName: node
   linkType: hard
 
@@ -3282,6 +3425,18 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
   checksum: 10c0/26880601bbce7f5ccac8d72fd367c096e6a5e40a43b4e1718484297e5e9bd7b24472933bf8b8078e275530ebf08c7cd7e98f1fd7358a1b12287f5470829491b1
+  languageName: node
+  linkType: hard
+
+"@mantine/form@npm:^7.12.2":
+  version: 7.12.2
+  resolution: "@mantine/form@npm:7.12.2"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    klona: "npm:^2.0.6"
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 10c0/6c742b2d498fb94bb81085a53c8304eb2d6cc59b3f89be0f73857c0cb13eeb38eb4f385b549b14573ef80cf905c8174f2f98603470c11a60dfcfb8d15a44b08c
   languageName: node
   linkType: hard
 
@@ -6214,6 +6369,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"arcjet@npm:1.0.0-alpha.24":
+  version: 1.0.0-alpha.24
+  resolution: "arcjet@npm:1.0.0-alpha.24"
+  dependencies:
+    "@arcjet/analyze": "npm:1.0.0-alpha.24"
+    "@arcjet/duration": "npm:1.0.0-alpha.24"
+    "@arcjet/headers": "npm:1.0.0-alpha.24"
+    "@arcjet/protocol": "npm:1.0.0-alpha.24"
+    "@arcjet/runtime": "npm:1.0.0-alpha.24"
+  checksum: 10c0/3255e4f443915ba8634bd90cd67fab3aab5bd10bd7cc963d298b0ec5c85ba336db2b57476972529d399b13b91ebc9a4929f458f74442d3c57362ea88717b7e85
+  languageName: node
+  linkType: hard
+
 "argparse@npm:^1.0.7":
   version: 1.0.10
   resolution: "argparse@npm:1.0.10"
@@ -6514,6 +6682,17 @@ __metadata:
   version: 4.9.1
   resolution: "axe-core@npm:4.9.1"
   checksum: 10c0/ac9e5a0c6fa115a43ebffc32a1d2189e1ca6431b5a78e88cdcf94a72a25c5964185682edd94fe6bdb1cb4266c0d06301b022866e0e50dcdf6e3cefe556470110
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.7.4":
+  version: 1.7.7
+  resolution: "axios@npm:1.7.7"
+  dependencies:
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 10c0/4499efc89e86b0b49ffddc018798de05fab26e3bf57913818266be73279a6418c3ce8f9e934c7d2d707ab8c095e837fc6c90608fb7715b94d357720b5f568af7
   languageName: node
   linkType: hard
 
@@ -9719,6 +9898,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.9
+  resolution: "follow-redirects@npm:1.15.9"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 10c0/5829165bd112c3c0e82be6c15b1a58fa9dcfaede3b3c54697a82fe4a62dd5ae5e8222956b448d2f98e331525f05d00404aba7d696de9e761ef6e42fdc780244f
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
@@ -12001,7 +12190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"klona@npm:^2.0.4":
+"klona@npm:^2.0.4, klona@npm:^2.0.6":
   version: 2.0.6
   resolution: "klona@npm:2.0.6"
   checksum: 10c0/94eed2c6c2ce99f409df9186a96340558897b3e62a85afdc1ee39103954d2ebe1c1c4e9fe2b0952771771fa96d70055ede8b27962a7021406374fdb695fd4d01
@@ -12319,8 +12508,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mantine-next-template@workspace:."
   dependencies:
+    "@arcjet/next": "npm:^1.0.0-alpha.24"
     "@babel/core": "npm:^7.24.7"
     "@mantine/core": "npm:7.12.1"
+    "@mantine/form": "npm:^7.12.2"
     "@mantine/hooks": "npm:7.12.1"
     "@next/bundle-analyzer": "npm:^14.2.4"
     "@next/eslint-plugin-next": "npm:^14.2.4"
@@ -12359,6 +12550,7 @@ __metadata:
     postcss: "npm:^8.4.38"
     postcss-preset-mantine: "npm:1.17.0"
     postcss-simple-vars: "npm:^7.0.1"
+    postmark: "npm:^4.0.5"
     prettier: "npm:^3.3.2"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
@@ -13868,6 +14060,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postmark@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "postmark@npm:4.0.5"
+  dependencies:
+    axios: "npm:^1.7.4"
+  checksum: 10c0/d8d7108e49919812d485306ede69c30b9532328d7a21f881e891c7c26f25395850b3291d688a9ad09d352daeb395eee2e45353d9174e15fb71d7d9bfaa2a5cd2
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -14000,6 +14201,13 @@ __metadata:
     forwarded: "npm:0.2.0"
     ipaddr.js: "npm:1.9.1"
   checksum: 10c0/c3eed999781a35f7fd935f398b6d8920b6fb00bbc14287bc6de78128ccc1a02c89b95b56742bf7cf0362cc333c61d138532049c7dedc7a328ef13343eff81210
+  languageName: node
+  linkType: hard
+
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: 10c0/fe7dd8b1bdbbbea18d1459107729c3e4a2243ca870d26d34c2c1bcd3e4425b7bcc5112362df2d93cc7fb9746f6142b5e272fd1cc5c86ddf8580175186f6ad42b
   languageName: node
   linkType: hard
 
@@ -16568,6 +16776,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typeid-js@npm:1.0.0":
+  version: 1.0.0
+  resolution: "typeid-js@npm:1.0.0"
+  dependencies:
+    uuidv7: "npm:^0.6.2"
+  checksum: 10c0/e7f76b2fcf17fea904bccd8fb3104c8f44279c0ebc2c1ff574415226c257601bc4dcbabbac5f365705fbc6cf084a6348301da42b9eccb08ebe808ca9f2fd46f8
+  languageName: node
+  linkType: hard
+
 "typescript@npm:5.5.2":
   version: 5.5.2
   resolution: "typescript@npm:5.5.2"
@@ -16613,6 +16830,15 @@ __metadata:
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.28.3":
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
+  dependencies:
+    "@fastify/busboy": "npm:^2.0.0"
+  checksum: 10c0/08d0f2596553aa0a54ca6e8e9c7f45aef7d042c60918564e3a142d449eda165a80196f6ef19ea2ef2e6446959e293095d8e40af1236f0d67223b06afac5ecad7
   languageName: node
   linkType: hard
 
@@ -16900,6 +17126,15 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 10c0/1607dd32ac7fc22f2d8f77051e6a64845c9bce5cd3dd8aa0070c074ec73e666a1f63c7b4e0f4bf2bc8b9d59dc85a15e17807446d9d2b17c8485fbc2147b27f9b
+  languageName: node
+  linkType: hard
+
+"uuidv7@npm:^0.6.2":
+  version: 0.6.3
+  resolution: "uuidv7@npm:0.6.3"
+  bin:
+    uuidv7: cli.js
+  checksum: 10c0/156208586741968a099f2ab996b3d855e14faf1fcc2b7f536eda6dcfadf382139ecc0ce93c293f2177f968e0859c4b8276cc05c6aaca36ef5a4caecd8dcafda7
   languageName: node
   linkType: hard
 

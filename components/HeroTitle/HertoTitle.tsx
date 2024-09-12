@@ -1,42 +1,47 @@
 'use client'
 import React from 'react'
-import { Container, Text, Button, Group, Avatar } from '@mantine/core'
-import classes from './HeroTitle.module.css'
+import { Text } from '@mantine/core'
+import styles from './HeroTitle.module.css'
 import Image from 'next/image'
+import Container from '../Container/Container'
+import Button from '../Button/Button'
 
-export function HeroTitle() {
+interface HeroTitleProps {
+  scrollToRef: () => void
+}
+
+export function HeroTitle(props: HeroTitleProps) {
   return (
-    <section className={classes.wrapper}>
-      <Container size={700} className={classes.inner}>
-        <Avatar
-          src={`https://imagedelivery.net/JXV2YHMjHNlIvjEy_tpsRQ/848ecc3d-530d-4bd8-648d-e36042769900/public`}
-          size={300}
-          radius={'sm'}
-          mb="xl"
-        />
+    <section className={styles.wrapper}>
+      <Container>
+        <div className={styles.hero}>
+          <div className={styles.portrait}>
+            <Image
+              src={'35857f81-b3e2-4b41-3bc3-1024c3bcb300'}
+              fill
+              style={{ objectFit: 'contain' }}
+              sizes="(max-width: 576px) 100vw, (max-width: 1200px) 33vw"
+              alt="Jochem Dobber"
+            />
+          </div>
 
-        <Image
-          src={'151c8588-0793-47db-e014-62a5aad8c100/public'}
-          width={603}
-          height={346}
-          alt="Jochem Dobber"
-        />
+          <Image
+            src={'151c8588-0793-47db-e014-62a5aad8c100'}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className={`${styles.logo} $`}
+            style={{ width: '100%', height: 'auto' }}
+            alt="Jochem Dobber"
+          />
+        </div>
 
-        <Text className={classes.description}>
-          Hi, I&apos;m Jochem. Next to a proffesional athlete I&apos;m working
-          as a freelance web-developer.
+        <Text className={styles.description}>
+          Hi, I&apos;m Jochem. I&apos;m a web developer and an Olympic track and
+          field athlete.
         </Text>
 
-        <Group className={classes.controls}>
-          <Button
-            size="xl"
-            className={classes.control}
-            variant="outline"
-            color="white"
-          >
-            See my work
-          </Button>
-        </Group>
+        <Button onClick={props.scrollToRef}>See my work</Button>
       </Container>
     </section>
   )

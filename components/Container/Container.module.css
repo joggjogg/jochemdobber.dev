@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 1.5rem 2.5rem;
+
+  @media (min-width: $mantine-breakpoint-xs) {
+    padding: 3rem 5rem;
+  }
+
+  @media (min-width: $mantine-breakpoint-lg) {
+    padding: 3rem 10rem;
+  }
+}
+
+.content {
+  flex: 1;
+  max-width: 1296px;
+  margin-bottom: 4rem;
+}
