@@ -29,11 +29,11 @@ export default function HomePage() {
               description="mobile web app"
               tags={['react', 'vite', 'AWS']}
             />
-            <WorkSection
+            {/* <WorkSection
               title="trackify"
               description="SaaS "
               tags={['react', 'dotnet', 'AWS']}
-            />
+            /> */}
           </Stack>
         </Container>
       </section>
