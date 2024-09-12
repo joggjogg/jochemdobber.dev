@@ -93,3 +93,10 @@
   text-decoration: none;
   color: var(--mantine-primary-color-filled);
 }
+
+.group {
+  justify-content: space-around;
+  @media (min-width: $mantine-breakpoint-xs) {
+    justify-content: start;
+  }
+}

@@ -44,7 +44,7 @@ const BetSlip = () => {
         </Stack>
       </div>
 
-      <Group gap={'xl'}>
+      <Group className={styles.group} gap={'xl'}>
         <CaptionedImage
           mobile
           src="92f945d1-e0ef-4fb1-4806-cc120a802700"
@@ -75,7 +75,7 @@ const BetSlip = () => {
         loaded.
       </p>
 
-      <Group gap={'xl'}>
+      <Group className={styles.group} gap={'xl'}>
         <CaptionedImage
           mobile
           src="cd85bd00-be5d-4cc0-4a5e-5e481f640a00"
@@ -94,7 +94,7 @@ const BetSlip = () => {
         certain are available the payout on the bets of that day are calculated.
       </p>
 
-      <Group gap={'xl'}>
+      <Group className={styles.group} gap={'xl'}>
         <CaptionedImage
           mobile
           src="62856080-0426-4a19-20ae-0831f8e8a000"
