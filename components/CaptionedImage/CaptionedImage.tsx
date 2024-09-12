@@ -8,7 +8,7 @@ interface CaptionedImageProps {
   mobile?: boolean
 }
 
-const CaptionedImage = ({ src, alt, caption, mobile }: CaptionedImageProps) => {
+const CaptionedImage = ({ src, caption, mobile }: CaptionedImageProps) => {
   return (
     <div className={`${styles.container} ${mobile && styles.mobile}`}>
       <Image
