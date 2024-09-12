@@ -95,3 +95,5 @@ const sendEmail = (data: EmailRequest) => {
     MessageStream: 'outbound',
   })
 }
+
+export const runtime = 'edge'
