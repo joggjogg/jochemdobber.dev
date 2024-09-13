@@ -7,7 +7,7 @@ import CaptionedImage from '@/components/CaptionedImage/CaptionedImage'
 const BetSlip = () => {
   return (
     <>
-      <div className={styles.title}>bet-slip</div>
+      <div className={styles.title}>Bet-slip</div>
       <Divider />
       <div className={styles.overview}>Overview</div>
       <div className={styles.overviewContainer}>
