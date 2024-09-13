@@ -7,7 +7,7 @@ import Divider from '@/components/Divider/Divider'
 const Preaz = () => {
   return (
     <>
-      <div className={styles.title}>preaz</div>
+      <div className={styles.title}>Preaz</div>
       <Divider />
       <div className={styles.overview}>Overview</div>
       <div className={styles.overviewContainer}>

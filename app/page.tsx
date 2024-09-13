@@ -20,12 +20,12 @@ export default function HomePage() {
         <Container>
           <Stack ref={workSectionRef} gap={'xl'} justify="space-around">
             <WorkSection
-              title="preaz"
+              title="Preaz"
               description="desktop web app"
               tags={['react', 'dotnet', 'kubernetes']}
             />
             <WorkSection
-              title="bet-slip"
+              title="Bet-slip"
               description="mobile web app"
               tags={['react', 'vite', 'AWS']}
             />
