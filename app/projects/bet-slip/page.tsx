@@ -91,7 +91,8 @@ const BetSlip = () => {
       <p className={styles.description}>
         In order to do automatic payout calculation the end user is able to
         enter the winning lottery numbers. After the winning numbers of a
-        certain are available the payout on the bets of that day are calculated.
+        certain day are available the payout on the bets of that day are
+        calculated.
       </p>
 
       <Group className={styles.group} gap={'xl'}>
