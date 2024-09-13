@@ -2,6 +2,7 @@ import '@mantine/core/styles.css'
 import React from 'react'
 import { MantineProvider, ColorSchemeScript } from '@mantine/core'
 import { theme } from '../theme'
+import Availability from '@/components/Availability/Availability'
 
 export const metadata = {
   title: 'Jochem Dobber portfolio',
@@ -30,7 +31,10 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <Availability available />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   )
