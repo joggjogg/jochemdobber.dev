@@ -80,7 +80,13 @@
 .title {
   color: var(--mantine-color-white);
   margin-bottom: 3rem;
-  font-size: 50px;
+  font-size: 35px;
+  @media (min-width: $mantine-breakpoint-xs) {
+    font-size: 40px;
+  }
+  @media (min-width: $mantine-breakpoint-lg) {
+    font-size: 50px;
+  }
 }
 
 .formRow {
