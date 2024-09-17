@@ -1,14 +1,23 @@
+'use client'
 import Header from '@/components/Header/Header'
-import React from 'react'
+import React, { useRef } from 'react'
 import Container from '@/components/Container/Container'
-import Footer from '@/components/Footer/Footer'
+import Contact from '@/components/Contact/Contact'
 
 const Projects = ({ children }: { children: React.ReactNode }) => {
+  const contactRef = useRef<HTMLDivElement>(null)
+
+  const scrollToContactRef = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
-      <Header />
+      <Header scrollToContactRef={scrollToContactRef} />
       <Container>{children}</Container>
-      <Footer />
+      <footer ref={contactRef}>
+        <Contact />
+      </footer>
     </>
   )
 }

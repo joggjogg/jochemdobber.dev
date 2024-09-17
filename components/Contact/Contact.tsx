@@ -1,13 +1,13 @@
 'use client'
 import React, { useState } from 'react'
 import { Group, Textarea, TextInput } from '@mantine/core'
-import styles from './Footer.module.css'
+import styles from './Contact.module.css'
 import { useForm } from '@mantine/form'
 import Container from '../Container/Container'
 import Button from '../Button/Button'
 import Socials from '../Socials/Socials'
 
-const Footer = () => {
+const Contact = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState<string | null>(null)
@@ -99,4 +99,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Contact

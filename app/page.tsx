@@ -3,22 +3,23 @@ import React, { useRef } from 'react'
 import { Stack } from '@mantine/core'
 import { HeroTitle } from '@/components/HeroTitle/HertoTitle'
 import WorkSection from '@/components/WorkSection/WorkSection'
-import Footer from '@/components/Footer/Footer'
+import Contact from '@/components/Contact/Contact'
 import Container from '@/components/Container/Container'
 
 export default function HomePage() {
   const workSectionRef = useRef<HTMLDivElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
 
-  const scrollToRef = () => {
+  const scrollToWorkSection = () => {
     workSectionRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
     <>
-      <HeroTitle scrollToRef={scrollToRef} />
-      <section>
+      <HeroTitle scrollToRef={scrollToWorkSection} />
+      <section ref={workSectionRef}>
         <Container>
-          <Stack ref={workSectionRef} gap={'xl'} justify="space-around">
+          <Stack gap={'xl'} justify="space-around">
             <WorkSection
               title="Preaz"
               description="desktop web app"
@@ -37,8 +38,8 @@ export default function HomePage() {
           </Stack>
         </Container>
       </section>
-      <footer>
-        <Footer />
+      <footer ref={contactRef}>
+        <Contact />
       </footer>
     </>
   )
