@@ -41,7 +41,10 @@ const Footer = () => {
           "Thank your for sending me a message. I'll get in touch with you soon!",
         )
         form.reset()
+        return
       }
+
+      throw new Error(await response.json())
     } catch (error) {
       if (error instanceof Error) {
         setError(error.message)
