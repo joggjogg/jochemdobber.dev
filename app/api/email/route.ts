@@ -24,10 +24,15 @@ export async function POST(req: Request) {
   }
   const data = (await req.json()) as EmailRequest
 
+  console.debug(response)
+
   try {
     await sendEmail(data)
     if (!success) {
-      return new NextResponse(JSON.stringify(response), { status: 429 })
+      return NextResponse.json(
+        { message: 'Request rate limited' },
+        { status: 429 },
+      )
     }
     return NextResponse.json(
       {
