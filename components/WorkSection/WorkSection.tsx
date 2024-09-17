@@ -16,7 +16,7 @@ const WorkSection = (props: WorkSectionProps) => {
 
   return (
     <div className={styles.container}>
-      <Link href={`/projects/${title.toLowerCase()}`} className={styles.link}>
+      <Link href={`/my-work/${title.toLowerCase()}`} className={styles.link}>
         <Group justify="space-between">
           <Stack gap={0}>
             <Group>

@@ -11,6 +11,7 @@ import Socials from '../Socials/Socials'
 
 const Header = ({ scrollToContactRef }: { scrollToContactRef: () => void }) => {
   const [isActive, setIsActive] = useState<boolean>(false)
+  const toggle = () => setIsActive(current => !current)
   return (
     <div className={styles.container}>
       <div className={`${styles.overlay} ${isActive ? styles.open : ''}`}>
@@ -19,10 +20,10 @@ const Header = ({ scrollToContactRef }: { scrollToContactRef: () => void }) => {
             <Link className={styles.link} href={'/'}>
               Home
             </Link>
-            <Link className={styles.link} href={'/projects'}>
-              Projects
+            <Link className={styles.link} href={'/my-work'} onClick={toggle}>
+              My work
             </Link>
-            <Link className={styles.link} href={'/about-me'}>
+            <Link className={styles.link} href={'/about-me'} onClick={toggle}>
               About me
             </Link>
             <div

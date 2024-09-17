@@ -1,9 +1,10 @@
 .title {
-  color: var(--mantine-primary-color-filled);
-  font-size: 64px;
-  @media (min-width: $mantine-breakpoint-xs) {
-    font-size: 108px;
-  }
+  margin-bottom: 2rem;
+  font-size: 50px;
+  line-height: 200%;
+  font-weight: 500;
+  color: var(--mantine-primary-color-6);
+  border-bottom: 2px solid var(--mantine-primary-color-6);
 }
 
 .overviewContainer {
@@ -26,10 +27,10 @@
   font-weight: 400;
   line-height: 100%;
   @media (min-width: $mantine-breakpoint-xs) {
-    font-size: 46px;
+    font-size: 40px;
   }
   @media (min-width: $mantine-breakpoint-lg) {
-    font-size: 54px;
+    font-size: 30px;
   }
 }
 
@@ -37,8 +38,8 @@
   color: var(--mantine-primary-color-filled);
   letter-spacing: 0.05em;
   margin-top: 0;
-  margin-bottom: 0;
-  font-size: 21px;
+  margin-bottom: 2rem;
+  font-size: 18px;
   font-weight: 300;
   line-height: 154%;
   text-decoration: none;
@@ -87,7 +88,7 @@
 
 .list {
   letter-spacing: 0.05em;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 154%;
   text-decoration: none;
