@@ -1,85 +1,48 @@
+export const runtime = 'edge'
+export const dynamic = 'force-dynamic'
+
 import EmailRequest from '@/app/types/emailRequest'
-import arcjet, { protectSignup, shield } from '@arcjet/next'
 import { NextResponse } from 'next/server'
+import { Ratelimit } from '@upstash/ratelimit'
+import { Redis } from '@upstash/redis'
 var postmark = require('postmark')
 
-const aj = arcjet({
-  key: process.env.ARCJET_KEY!,
-  rules: [
-    shield({
-      mode: 'DRY_RUN',
-    }),
-    protectSignup({
-      email: {
-        mode: 'LIVE',
-        block: ['DISPOSABLE', 'INVALID', 'NO_MX_RECORDS'],
-      },
-      bots: {
-        mode: 'LIVE',
-        allow: [],
-      },
-      rateLimit: {
-        mode: 'LIVE',
-        interval: '10m',
-        max: 10,
-      },
-    }),
-  ],
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.slidingWindow(10, '10 s'),
+  prefix: '@upstash/ratelimit',
+  analytics: true,
 })
 
 export async function POST(req: Request) {
+  const identifier = 'api'
+  const { success, limit, remaining } = await ratelimit.limit(identifier)
+  const response = {
+    success: success,
+    limit: limit,
+    remaining: remaining,
+  }
   const data = (await req.json()) as EmailRequest
 
-  const badRequestResponse = (parameter: string) =>
-    NextResponse.json(
-      { message: `Missing parameter: ${parameter}` },
-      { status: 400 },
-    )
-
-  if (data.email == '' || data.email == undefined) {
-    return badRequestResponse(data.email)
-  }
-
-  if (data.name == '' || data.name == undefined) {
-    return badRequestResponse(data.name)
-  }
-
-  if (data.message == '' || data.message == undefined) {
-    return badRequestResponse(data.message)
-  }
-
-  const decision = await aj.protect(req, { email: data.email })
-
-  if (decision.isDenied()) {
-    if (decision.reason.isEmail()) {
-      return NextResponse.json(
-        {
-          message: 'Invalid email',
-          reason: decision.reason,
-        },
-        { status: 400 },
-      )
-    } else {
-      return NextResponse.json({ message: 'Forbidden' }, { status: 403 })
+  try {
+    await sendEmail(data)
+    if (!success) {
+      return new NextResponse(JSON.stringify(response), { status: 429 })
     }
-  } else {
-    try {
-      await sendEmail(data)
+    return NextResponse.json(
+      {
+        message: 'Message sent succesfully',
+      },
+      { status: 200 },
+    )
+  } catch (error) {
+    if (error instanceof Error) {
       return NextResponse.json(
         {
-          message: 'Message sent succesfully',
+          message: error.message,
         },
-        { status: 200 },
+        { status: 500 },
       )
-    } catch (error) {
-      if (error instanceof Error) {
-        return NextResponse.json(
-          {
-            message: error.message,
-          },
-          { status: 500 },
-        )
-      }
     }
   }
 }
@@ -95,5 +58,3 @@ const sendEmail = async (data: EmailRequest) => {
     MessageStream: 'outbound',
   })
 }
-
-export const runtime = 'edge'
