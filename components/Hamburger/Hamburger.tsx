@@ -1,14 +1,21 @@
 import React from 'react'
 import styles from './Hamburger.module.css'
 
-const Hamburger = () => {
+const Hamburger = ({
+  active,
+  onClick,
+}: {
+  active: boolean
+  onClick: () => void
+}) => {
   return (
     <button
-      className={`${styles.hamburger} ${styles.hamburgerArrow}`}
+      className={`${styles.hamburger} ${styles.hamburgerSpring} ${active ? styles.isActive : ''}`}
       type="button"
+      onClick={onClick}
     >
       <span className={styles.hamburgerBox}>
-        <span className="hamburger-inner"></span>
+        <span className={styles.hamburgerInner}></span>
       </span>
     </button>
   )
