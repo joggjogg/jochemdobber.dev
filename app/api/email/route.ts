@@ -1,7 +1,7 @@
 export const runtime = 'edge'
 export const dynamic = 'force-dynamic'
 
-import EmailRequest from '@/app/types/emailRequest'
+import EmailRequest from '@/util/types/emailRequest'
 import { NextResponse } from 'next/server'
 import { Ratelimit } from '@upstash/ratelimit'
 import { Redis } from '@upstash/redis'

@@ -1,4 +1,3 @@
-import Divider from '@/components/Divider/Divider'
 import styles from '../layout.module.css'
 import { Group, Stack } from '@mantine/core'
 import React from 'react'
@@ -8,7 +7,6 @@ const BetSlip = () => {
   return (
     <>
       <div className={styles.title}>Bet-slip</div>
-      <Divider />
       <div className={styles.overview}>Overview</div>
       <div className={styles.overviewContainer}>
         <Stack className={styles.descriptionContainer}>

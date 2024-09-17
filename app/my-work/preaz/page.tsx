@@ -2,14 +2,11 @@ import React from 'react'
 import styles from '../layout.module.css'
 import { Stack } from '@mantine/core'
 import CaptionedImage from '@/components/CaptionedImage/CaptionedImage'
-import Divider from '@/components/Divider/Divider'
 
 const Preaz = () => {
   return (
     <>
       <div className={styles.title}>Preaz</div>
-      <Divider />
-      <div className={styles.overview}>Overview</div>
       <div className={styles.overviewContainer}>
         <Stack className={styles.descriptionContainer}>
           <p className={styles.summary}>
@@ -22,7 +19,7 @@ const Preaz = () => {
             clients started to show cracks in their system. The scope of the
             project was to create an application where they could seemlessly
             work together in a shared planning custom made to their massage
-            specific environment. Together with 2 friends we chose to build a
+            specific environment. Together with my partners we chose to build a
             desktop web application to play into the strengths of a full page
             calendar.
           </p>
