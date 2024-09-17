@@ -1,6 +1,8 @@
 .title {
   color: var(--mantine-primary-color-filled);
   font-size: 64px;
+  line-height: 80%;
+  margin-top: 2rem;
   @media (min-width: $mantine-breakpoint-xs) {
     font-size: 108px;
   }

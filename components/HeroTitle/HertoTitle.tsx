@@ -4,13 +4,8 @@ import { Text } from '@mantine/core'
 import styles from './HeroTitle.module.css'
 import Image from 'next/image'
 import Container from '../Container/Container'
-import Button from '../Button/Button'
 
-interface HeroTitleProps {
-  scrollToRef: () => void
-}
-
-export function HeroTitle(props: HeroTitleProps) {
+export function HeroTitle() {
   return (
     <section className={styles.wrapper}>
       <Container>
@@ -40,8 +35,6 @@ export function HeroTitle(props: HeroTitleProps) {
           Hi, I&apos;m Jochem. I&apos;m a web developer and an Olympic track and
           field athlete.
         </Text>
-
-        <Button onClick={props.scrollToRef}>See my work</Button>
       </Container>
     </section>
   )
