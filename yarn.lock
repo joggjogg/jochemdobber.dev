@@ -2277,20 +2277,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-mantine@npm:3.2.0":
-  version: 3.2.0
-  resolution: "eslint-config-mantine@npm:3.2.0"
+"eslint-config-mantine@npm:4.0.3":
+  version: 4.0.3
+  resolution: "eslint-config-mantine@npm:4.0.3"
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^7.2.0
-    "@typescript-eslint/parser": ^7.2.0
-    eslint: ^8.57.0
-    eslint-config-airbnb: 19.0.4
-    eslint-config-airbnb-typescript: ^18.0.0
-    eslint-plugin-import: ^2.29.1
-    eslint-plugin-jsx-a11y: ^6.8.0
-    eslint-plugin-react: ^7.34.0
-    eslint-plugin-react-hooks: ^4.6.0
-  checksum: 10c0/829f559a45b7fb4cea7e6d2b69dc0af62f6676f0f7da89704ca46920b491ea10a771e6c50905bb59a6d85071568546cf01f6f94f1da5c9f3fc8865d3c595c654
+    "@eslint/js": ^9.9.1
+    eslint: ^9.9.1
+    eslint-plugin-jsx-a11y: ^6.9.0
+    eslint-plugin-react: ^7.35.0
+    typescript-eslint: ^8.3.0
+  checksum: 10c0/5b91705193a49f09e63aeb1678cc4f508ac2d11444b3861a56189fbe425d011ba1d4cb16d4312b43ae5154b5f360bfb7570012feea489f2f1cd21be84881f541
   languageName: node
   linkType: hard
 
@@ -3634,7 +3630,7 @@ __metadata:
     eslint: "npm:^8.57.0"
     eslint-config-airbnb: "npm:19.0.4"
     eslint-config-airbnb-typescript: "npm:^18.0.0"
-    eslint-config-mantine: "npm:3.2.0"
+    eslint-config-mantine: "npm:4.0.3"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:^2.30.0"
     eslint-plugin-jest: "npm:^28.6.0"
