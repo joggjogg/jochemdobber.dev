@@ -5,7 +5,7 @@ import { theme } from '../theme'
 import Availability from '@/components/Availability/Availability'
 
 export const metadata = {
-  title: 'Jochem Dobber portfolio',
+  title: 'Jochem Dobber Portfolio',
   description: 'Hi, this is the portfolio website of Jochem Dobber.',
 }
 
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: any }) {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jochemdobber.dev/" />
-        <meta property="og:title" content="Jochem Dobber portfolio" />
+        <meta property="og:title" content="Jochem Dobber Portfolio" />
         <meta
           property="og:description"
           content="Hi, this is the portfolio website of Jochem Dobber."
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: any }) {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://jochemdobber.dev/" />
-        <meta property="twitter:title" content="Jochem Dobber portfolio" />
+        <meta property="twitter:title" content="Jochem Dobber Portfolio" />
         <meta
           property="twitter:description"
           content="Hi, this is the portfolio website of Jochem Dobber."
