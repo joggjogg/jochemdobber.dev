@@ -1,4 +1,4 @@
-import postmark from 'postmark'
+var postmark = require('postmark')
 import EmailRequest from './types/emailRequest'
 
 const postmarkClient = new postmark.ServerClient(process.env.POSTMARK_KEY!)
