@@ -5,7 +5,7 @@ import EmailRequest from '@/util/types/emailRequest'
 import { NextResponse } from 'next/server'
 import { Ratelimit } from '@upstash/ratelimit'
 import { Redis } from '@upstash/redis'
-var postmark = require('postmark')
+import sendEmail from '@/util/email'
 
 const ratelimit = new Ratelimit({
   redis: Redis.fromEnv(),
@@ -27,39 +27,26 @@ export async function POST(req: Request) {
   console.debug(response)
 
   try {
-    await sendEmail(data)
     if (!success) {
       return NextResponse.json(
         { message: 'Request rate limited' },
         { status: 429 },
       )
     }
+    await sendEmail(data)
+
     return NextResponse.json(
       {
         message: 'Message sent succesfully',
       },
       { status: 200 },
     )
-  } catch (error) {
-    if (error instanceof Error) {
-      return NextResponse.json(
-        {
-          message: error.message,
-        },
-        { status: 500 },
-      )
-    }
+  } catch (error: any) {
+    return NextResponse.json(
+      {
+        message: error.message,
+      },
+      { status: 500 },
+    )
   }
-}
-
-const sendEmail = async (data: EmailRequest) => {
-  var client = new postmark.ServerClient(process.env.POSTMARK_KEY)
-
-  client.sendEmailWithTemplate({
-    TemplateId: 37250157,
-    From: 'mail@jochemdobber.nl',
-    To: 'mail@jochemdobber.nl',
-    TemplateModel: data,
-    MessageStream: 'outbound',
-  })
 }
