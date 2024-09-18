@@ -34,6 +34,7 @@ export async function POST(req: Request) {
       )
     }
     await sendEmail(data)
+
     return NextResponse.json(
       {
         message: 'Message sent succesfully',
