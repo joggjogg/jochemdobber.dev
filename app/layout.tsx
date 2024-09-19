@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: any }) {
         <link rel="icon" href="/icon.svg" type="image/svg" sizes="any" />
         <link
           rel="apple-touch-icon"
-          href="/apple-touch-icon.jpg"
+          href="/apple-icon.jpg"
           type="image/jpg"
           sizes="any"
         />
