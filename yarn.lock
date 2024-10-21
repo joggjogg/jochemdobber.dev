@@ -572,9 +572,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.12.1":
-  version: 7.12.1
-  resolution: "@mantine/core@npm:7.12.1"
+"@mantine/core@npm:7.13.3":
+  version: 7.13.3
+  resolution: "@mantine/core@npm:7.13.3"
   dependencies:
     "@floating-ui/react": "npm:^0.26.9"
     clsx: "npm:^2.1.1"
@@ -583,10 +583,10 @@ __metadata:
     react-textarea-autosize: "npm:8.5.3"
     type-fest: "npm:^4.12.0"
   peerDependencies:
-    "@mantine/hooks": 7.12.1
+    "@mantine/hooks": 7.13.3
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 10c0/26880601bbce7f5ccac8d72fd367c096e6a5e40a43b4e1718484297e5e9bd7b24472933bf8b8078e275530ebf08c7cd7e98f1fd7358a1b12287f5470829491b1
+  checksum: 10c0/adbde03c519f039d7538ed8acb2de65583e0e1df223f7abc1420f755e96fc5844dd0d2998297043d26c163e9409061af26719941bc16531749bb4f4c08cd7df3
   languageName: node
   linkType: hard
 
@@ -3560,7 +3560,7 @@ __metadata:
   resolution: "jochemdobber.dev@workspace:."
   dependencies:
     "@babel/core": "npm:^7.24.7"
-    "@mantine/core": "npm:7.12.1"
+    "@mantine/core": "npm:7.13.3"
     "@mantine/form": "npm:^7.12.2"
     "@mantine/hooks": "npm:7.12.1"
     "@next/bundle-analyzer": "npm:^14.2.4"
