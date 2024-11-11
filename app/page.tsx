@@ -25,6 +25,11 @@ export default function HomePage() {
               tags={['react', 'dotnet', 'kubernetes']}
             />
             <WorkSection
+              title="Wheredidmytimego"
+              description="time tracking tool"
+              tags={['react', 'dotnet', 'rtk-query', 'mantine']}
+            />
+            <WorkSection
               title="Bet-slip"
               description="mobile web app"
               tags={['react', 'vite', 'AWS']}

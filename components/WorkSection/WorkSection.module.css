@@ -38,6 +38,7 @@
 
 .title {
   font-size: 80px;
+  word-break: break-all;
   @media (min-width: $mantine-breakpoint-xs) {
     font-size: 102px;
   }
