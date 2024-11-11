@@ -3,7 +3,7 @@ import { Group, Stack } from '@mantine/core'
 import React from 'react'
 import CaptionedImage from '@/components/CaptionedImage/CaptionedImage'
 
-const BetSlip = () => {
+const Page = () => {
   return (
     <>
       <div className={styles.title}>Bet-slip</div>
@@ -121,4 +121,4 @@ const BetSlip = () => {
   )
 }
 
-export default BetSlip
+export default Page
